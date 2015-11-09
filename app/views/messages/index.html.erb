@@ -46,13 +46,7 @@
             </div>
         </div> 
             <div class="panel-heading">
-              <%= form_for(@newmessage) do |f| %>
-              <%= f.text_field :content %>
-              <%= f.hidden_field :user_id, value: current_user.id %>
-              <%= f.submit "Envoyer", {:method => :post } %>
-
-  
-            <% end %>
+              <%= render 'layouts/formposts' %>
             </div>
           </div>
         </div>
